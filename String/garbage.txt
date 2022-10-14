@@ -1,0 +1,17 @@
+
+public class gc {
+
+	public static void main(String[] args) {
+
+		String s="hello";
+		s=null;
+		System.gc();
+		System.out.println(s);
+		
+			
+	}
+	
+	protected void finalize() {
+		System.out.println("finalize method is called");
+	}
+}
